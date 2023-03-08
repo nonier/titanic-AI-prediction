@@ -6,7 +6,7 @@ plugins {
 
 group = 'ru.tvgu'
 version = '0.0.1-SNAPSHOT'
-sourceCompatibility = '19'
+sourceCompatibility = "18"
 
 configurations {
 	compileOnly {
@@ -38,3 +38,4 @@ dependencyManagement {
 tasks.named('test') {
 	useJUnitPlatform()
 }
+targetCompatibility = JavaVersion.VERSION_18

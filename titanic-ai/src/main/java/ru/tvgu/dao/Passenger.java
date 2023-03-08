@@ -1,9 +1,6 @@
 package ru.tvgu.dao;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 @Data
 @Builder
@@ -11,13 +8,8 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class Passenger {
 
-    private CabinClass cabinClass;
-    private Boolean isAdult;
-    private Boolean isMale;
-    private Boolean isSurvived;
-
-    public int getCabinClass() {
-        return cabinClass.ordinal();
-    }
-
+    private Integer cabinClass;
+    private Integer isAdult;
+    private Integer isMale;
+    private Integer isSurvived;
 }
